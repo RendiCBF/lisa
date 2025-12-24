@@ -1,0 +1,84 @@
+ERROR - 2025-12-10 19:19:50 --> Error connecting to the database: mysqli_sql_exception: Invalid character set was provided in C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('')
+#1 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\codeigniter4-framework-68d1a58\app\Controllers\TestDB.php(18): CodeIgniter\Database\BaseConnection->query('SELECT NOW()')
+#4 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\TestDB->index()
+#5 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#6 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Invalid character set was provided in C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniter4-framework-68d1a58\app\Controllers\TestDB.php(18): CodeIgniter\Database\BaseConnection->query('SELECT NOW()')
+#3 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\TestDB->index()
+#4 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#5 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2025-12-10 19:19:56 --> Error connecting to the database: mysqli_sql_exception: Invalid character set was provided in C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('')
+#1 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\codeigniter4-framework-68d1a58\app\Controllers\TestDB.php(18): CodeIgniter\Database\BaseConnection->query('SELECT NOW()')
+#4 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\TestDB->index()
+#5 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#6 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Invalid character set was provided in C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniter4-framework-68d1a58\app\Controllers\TestDB.php(18): CodeIgniter\Database\BaseConnection->query('SELECT NOW()')
+#3 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\TestDB->index()
+#4 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#5 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2025-12-10 19:23:59 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'penjualan_ritel', 3306, '', 0)
+#1 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\codeigniter4-framework-68d1a58\app\Controllers\TestDB.php(18): CodeIgniter\Database\BaseConnection->query('SELECT NOW()')
+#4 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\TestDB->index()
+#5 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#6 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniter4-framework-68d1a58\app\Controllers\TestDB.php(18): CodeIgniter\Database\BaseConnection->query('SELECT NOW()')
+#3 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\TestDB->index()
+#4 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#5 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 C:\xampp\htdocs\codeigniter4-framework-68d1a58\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
