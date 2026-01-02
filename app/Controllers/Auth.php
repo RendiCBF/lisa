@@ -11,12 +11,26 @@ class Auth extends BaseController
     public function __construct()
     {
         $this->userModel = new UserModel();
+<<<<<<< HEAD
         helper(['form', 'url']);
     }
 
     public function login()
     {
         return view('auth/login');
+=======
+        // Memastikan helper form dan url selalu siap
+        helper(['form', 'url']);
+    }
+
+   public function login()
+    {
+    // Hapus atau beri komentar (//) pada baris redirect jika ingin login selalu tampil
+    // if (session()->get('logged_in')) {
+    //     return redirect()->to(base_url('dashboard'));
+    // }
+    return view('auth/login');
+>>>>>>> 269a8752cd7e6661a6b08be710f532b8cd982e2f
     }
 
     public function attemptLogin()
@@ -37,8 +51,12 @@ class Auth extends BaseController
                 return redirect()->back()->withInput()->with('error', 'Akun Anda dinonaktifkan.');
             }
 
+<<<<<<< HEAD
             // PERUBAHAN DI SINI: Menggunakan password_verify alih-alih md5()
             if (password_verify($password, $user['password'])) {
+=======
+            if (md5($password) === $user['password']) {
+>>>>>>> 269a8752cd7e6661a6b08be710f532b8cd982e2f
                 session()->set([
                     'user_id'   => $user['id'],
                     'username'  => $user['username'],
@@ -46,6 +64,7 @@ class Auth extends BaseController
                     'role_id'   => $user['role_id'],
                     'logged_in' => true
                 ]);
+<<<<<<< HEAD
                 $role_nama = '';
                 if ($user['role_id'] == 1) {
                     $role_nama = 'admin';
@@ -64,6 +83,10 @@ class Auth extends BaseController
                     'logged_in' => true
                 ]);
 
+=======
+
+                // SIMPAN LOG AKTIVITAS KE DATABASE
+>>>>>>> 269a8752cd7e6661a6b08be710f532b8cd982e2f
                 $db = \Config\Database::connect();
                 $db->table('log_aktivitas')->insert([
                     'users_id'   => $user['id'],
@@ -80,6 +103,7 @@ class Auth extends BaseController
         }
     }
 
+<<<<<<< HEAD
     public function logout()
     {
         $session = session();
@@ -87,3 +111,17 @@ class Auth extends BaseController
         return redirect()->to(base_url('login'))->with('success', 'Anda telah berhasil keluar.');
     }
 }
+=======
+   public function logout()
+    {
+    $session = session();
+    
+    // Jangan gunakan $session->destroy() karena akan menghapus flashdata pesan.
+    // Gunakan remove() untuk menghapus data login saja.
+    $session->remove(['user_id', 'username', 'nama', 'role_id', 'logged_in']);
+    
+    // Sekarang pesan 'success' akan tersimpan di flashdata dan bisa terbaca di login.php
+    return redirect()->to(base_url('login'))->with('success', 'Anda telah berhasil keluar.');
+    }
+} // Pastikan tanda kurung ini adalah yang terakhir di file Anda
+>>>>>>> 269a8752cd7e6661a6b08be710f532b8cd982e2f
