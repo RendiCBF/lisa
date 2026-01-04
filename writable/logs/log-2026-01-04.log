@@ -1,0 +1,805 @@
+DEBUG - 2026-01-04 13:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 13:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 15:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 15:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 15:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 15:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 15:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-04 16:52:25 --> Error: Class "App\Models\SupplierModel" not found
+[Method: GET, Route: suppliers]
+in APPPATH\Controllers\Supplier.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Supplier->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 16:53:30 --> mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist in C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lisa\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lisa\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\lisa\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\lisa\app\Controllers\Supplier.php(27): CodeIgniter\BaseModel->paginate(10, 'supplier')
+#7 C:\xampp\htdocs\lisa\system\CodeIgniter.php(933): App\Controllers\Supplier->index()
+#8 C:\xampp\htdocs\lisa\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+#9 C:\xampp\htdocs\lisa\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lisa\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lisa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\lisa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-01-04 16:53:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+[Method: GET, Route: suppliers]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Supplier.php(27): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:53:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Supplier.php(27): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:53:30 --> [Caused by] mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Supplier.php(27): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 16:55:57 --> mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist in C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lisa\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lisa\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\lisa\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\lisa\app\Controllers\Supplier.php(27): CodeIgniter\BaseModel->paginate(10, 'supplier')
+#7 C:\xampp\htdocs\lisa\system\CodeIgniter.php(933): App\Controllers\Supplier->index()
+#8 C:\xampp\htdocs\lisa\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+#9 C:\xampp\htdocs\lisa\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lisa\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lisa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\lisa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-01-04 16:55:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+[Method: GET, Route: suppliers]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Supplier.php(27): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:55:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Supplier.php(27): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:55:57 --> [Caused by] mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Supplier.php(27): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 16:56:24 --> mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist in C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lisa\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lisa\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\lisa\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\lisa\app\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+#7 C:\xampp\htdocs\lisa\system\CodeIgniter.php(933): App\Controllers\Supplier->index()
+#8 C:\xampp\htdocs\lisa\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+#9 C:\xampp\htdocs\lisa\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lisa\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lisa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\lisa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-01-04 16:56:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+[Method: GET, Route: suppliers]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:56:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:56:24 --> [Caused by] mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 16:57:44 --> mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist in C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lisa\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lisa\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\lisa\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\lisa\app\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+#7 C:\xampp\htdocs\lisa\system\CodeIgniter.php(933): App\Controllers\Supplier->index()
+#8 C:\xampp\htdocs\lisa\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+#9 C:\xampp\htdocs\lisa\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lisa\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lisa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\lisa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-01-04 16:57:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+[Method: GET, Route: suppliers]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:57:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:57:44 --> [Caused by] mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 16:57:51 --> mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist in C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lisa\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lisa\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\lisa\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\lisa\app\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+#7 C:\xampp\htdocs\lisa\system\CodeIgniter.php(933): App\Controllers\Supplier->index()
+#8 C:\xampp\htdocs\lisa\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+#9 C:\xampp\htdocs\lisa\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lisa\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lisa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\lisa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-01-04 16:57:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+[Method: GET, Route: suppliers]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:57:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:57:51 --> [Caused by] mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 16:59:38 --> mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist in C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lisa\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lisa\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\lisa\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\lisa\app\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+#7 C:\xampp\htdocs\lisa\system\CodeIgniter.php(933): App\Controllers\Supplier->index()
+#8 C:\xampp\htdocs\lisa\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+#9 C:\xampp\htdocs\lisa\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lisa\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lisa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\lisa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-01-04 16:59:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+[Method: GET, Route: supplier]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:59:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 16:59:38 --> [Caused by] mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 17:00:06 --> mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist in C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lisa\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lisa\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\lisa\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\lisa\app\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+#7 C:\xampp\htdocs\lisa\system\CodeIgniter.php(933): App\Controllers\Supplier->index()
+#8 C:\xampp\htdocs\lisa\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+#9 C:\xampp\htdocs\lisa\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lisa\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lisa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\lisa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-01-04 17:00:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+[Method: GET, Route: supplier]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 17:00:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 17:00:06 --> [Caused by] mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 17:00:08 --> mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist in C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lisa\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lisa\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lisa\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lisa\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\lisa\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\lisa\app\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+#7 C:\xampp\htdocs\lisa\system\CodeIgniter.php(933): App\Controllers\Supplier->index()
+#8 C:\xampp\htdocs\lisa\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+#9 C:\xampp\htdocs\lisa\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lisa\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lisa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\lisa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-01-04 17:00:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+[Method: GET, Route: supplier]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 17:00:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 17:00:08 --> [Caused by] mysqli_sql_exception: Table 'penjualan_ritel.suppliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `suppliers`', [], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Supplier.php(26): CodeIgniter\BaseModel->paginate(10, 'supplier')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-04 17:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-04 17:01:03 --> CodeIgniter\Pager\Exceptions\PagerException: "bootstrap_pagination" is not a valid Pager template.
+[Method: GET, Route: supplier]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap_pagination')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('supplier', 'bootstrap_pagination')
+ 3 APPPATH\Views\suppliers\index.php(85): CodeIgniter\Pager\Pager->links('supplier', 'bootstrap_pagination')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\lisa\\app\\Views\\suppliers\\index.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('suppliers/index', [], true)
+ 7 APPPATH\Controllers\Supplier.php(31): view('suppliers/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-04 17:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-04 17:04:41 --> ParseError: syntax error, unexpected token "endif", expecting end of file
+[Method: GET, Route: supplier]
+in APPPATH\Views\layouts\admin_master.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/admin_master', [], true)
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('suppliers/index', [], true)
+ 4 APPPATH\Controllers\Supplier.php(31): view('suppliers/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-04 17:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-04 17:04:47 --> ParseError: syntax error, unexpected token "endif", expecting end of file
+[Method: GET, Route: supplier]
+in APPPATH\Views\layouts\admin_master.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/admin_master', [], true)
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('suppliers/index', [], true)
+ 4 APPPATH\Controllers\Supplier.php(31): view('suppliers/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-04 17:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-04 17:23:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "suppliers/edit.php"
+[Method: GET, Route: supplier/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('suppliers/edit.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('suppliers/edit', [], true)
+ 3 APPPATH\Controllers\Supplier.php(72): view('suppliers/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Supplier->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supplier))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-04 17:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-04 17:40:08 --> Error: Class "App\Models\ItemModel" not found
+[Method: GET, Route: item]
+in APPPATH\Controllers\Item.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Item->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 17:40:33 --> Error: Class "App\Models\ItemModel" not found
+[Method: GET, Route: item]
+in APPPATH\Controllers\Item.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Item->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 17:41:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "items/index.php"
+[Method: GET, Route: item]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('items/index.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('items/index', [], true)
+ 3 APPPATH\Controllers\Item.php(36): view('items/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Item->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-04 17:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-04 17:54:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "items/index.php"
+[Method: GET, Route: item]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('items/index.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('items/index', [], true)
+ 3 APPPATH\Controllers\Item.php(34): view('items/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Item->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-04 17:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-04 17:54:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "items/index.php"
+[Method: GET, Route: item]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('items/index.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('items/index', [], true)
+ 3 APPPATH\Controllers\Item.php(34): view('items/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Item->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-04 17:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-04 17:55:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "items/create.php"
+[Method: GET, Route: item/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('items/create.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('items/create', [], true)
+ 3 APPPATH\Controllers\Item.php(42): view('items/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Item->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-04 17:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-04 17:55:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "items/create.php"
+[Method: GET, Route: item/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('items/create.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('items/create', [], true)
+ 3 APPPATH\Controllers\Item.php(42): view('items/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Item->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-04 17:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 17:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-04 18:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

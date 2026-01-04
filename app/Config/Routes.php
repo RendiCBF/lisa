@@ -36,3 +36,19 @@ $routes->get('user', 'User::index', ['filter' => 'role:admin']);
 $routes->get('error403', function() {
     return view('errors/error_403');
 });
+
+// Mengarahkan URL /supplier ke Controller Supplier
+$routes->get('supplier', 'Supplier::index');
+$routes->get('supplier/create', 'Supplier::create');
+$routes->post('supplier/store', 'Supplier::store');
+$routes->get('supplier/edit/(:num)', 'Supplier::edit/$1');
+$routes->post('supplier/update/(:num)', 'Supplier::update/$1');
+$routes->delete('supplier/(:num)', 'Supplier::delete/$1');
+
+
+$routes->get('item', 'Item::index');
+$routes->get('item/create', 'Item::create');
+$routes->post('item/store', 'Item::store');
+$routes->get('item/edit/(:num)', 'Item::edit/$1');
+$routes->post('item/update/(:num)', 'Item::update/$1');
+$routes->delete('item/(:num)', 'Item::delete/$1');

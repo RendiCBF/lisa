@@ -1,24 +1,90 @@
 <?php
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Item extends CI_Controller { // Nama Class harus sama dengan Nama File
+namespace App\Controllers;
 
-    public function index() {
-        // Mengambil data dari tabel 'item' sesuai ERD di PDF
-        $data['items'] = $this->db->get('item')->result_array();
-        $this->load->view('item/index', $data);
+use App\Models\ItemModel;
+use App\Models\SupplierModel;
+
+class Item extends BaseController
+{
+    protected $itemModel;
+    protected $supplierModel;
+
+    public function __construct()
+    {
+        $this->itemModel = new ItemModel();
+        $this->supplierModel = new SupplierModel();
     }
-}
-    public function add() {
+
+    public function index()
+    {
+        $keyword = $this->request->getVar('keyword');
+        $itemData = $this->itemModel->getItemWithSupplier();
+
+        if ($keyword) {
+            $itemData->like('item.nama', $keyword);
+        }
+
         $data = [
-            'nama_item'  => $this->input->post('nama_item'),
-            'kategori'   => $this->input->post('kategori'),
-            'stok'       => $this->input->post('stok'),
-            'harga_beli' => $this->input->post('harga_beli'),
-            'harga_jual' => $this->input->post('harga_jual')
+            'items'   => $itemData->paginate(10, 'item'),
+            'pager'   => $this->itemModel->pager,
+            'keyword' => $keyword
         ];
-        $this->db->insert('item', $data);
-        redirect('item');
+
+        return view('items/index', $data);
+    }
+
+    public function create()
+    {
+        $data = [
+            'suppliers' => $this->supplierModel->findAll()
+        ];
+        return view('items/create', $data);
+    }
+
+    public function store()
+    {
+        $this->itemModel->save([
+            'supplier_id' => $this->request->getPost('supplier_id'),
+            'nama'        => $this->request->getPost('nama'),
+            'stok'        => $this->request->getPost('stok'),
+            'harga'       => $this->request->getPost('harga'),
+        ]);
+
+        return redirect()->to(base_url('item'))->with('success', 'Data Item berhasil disimpan.');
+    }
+
+    // --- TAMBAHKAN KODE DI BAWAH INI ---
+
+    public function edit($id)
+    {
+        $data = [
+            'item'      => $this->itemModel->find($id),
+            'suppliers' => $this->supplierModel->findAll()
+        ];
+
+        if (!$data['item']) {
+            return redirect()->to(base_url('item'))->with('error', 'Data tidak ditemukan.');
+        }
+
+        return view('items/edit', $data);
+    }
+
+    public function update($id)
+    {
+        $this->itemModel->update($id, [
+            'supplier_id' => $this->request->getPost('supplier_id'),
+            'nama'        => $this->request->getPost('nama'),
+            'stok'        => $this->request->getPost('stok'),
+            'harga'       => $this->request->getPost('harga'),
+        ]);
+
+        return redirect()->to(base_url('item'))->with('success', 'Data Item berhasil diubah.');
+    }
+
+    public function delete($id)
+    {
+        $this->itemModel->delete($id);
+        return redirect()->to(base_url('item'))->with('success', 'Data Item berhasil dihapus.');
     }
 }
