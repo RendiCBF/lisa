@@ -63,9 +63,10 @@
 
                 <?php if (in_array(session()->get('role_nama'), ['admin', 'manager', 'staff'])): ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('orders') ?>">
+                    <a class="nav-link" href="<?= base_url('order/create') ?>">
                         <i class="fas fa-fw fa-cash-register"></i>
-                        <span>Penjualan (Orders)</span></a>
+                        <span>Penjualan (Orders)</span>
+                    </a>
                 </li>
                 <?php endif; ?>
 

@@ -52,3 +52,8 @@ $routes->post('item/store', 'Item::store');
 $routes->get('item/edit/(:num)', 'Item::edit/$1');
 $routes->post('item/update/(:num)', 'Item::update/$1');
 $routes->delete('item/(:num)', 'Item::delete/$1');
+
+// ini untuk penjualan
+$routes->get('order/create', 'Order::create');
+$routes->post('order/store', 'Order::store');
+$routes->get('order/preview/(:num)', 'Order::preview/$1');
